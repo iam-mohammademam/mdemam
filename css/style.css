@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+	scroll-behavior: smooth;
+}
+
+:root {
+	--font-color: #000;
+	--background-color: #EDF7FE;
+	--theme-color: #f1c40f;
+	--hover-color: #e30801;
+	--light-theme-bg: rgba(240, 247, 0, .6);
+	--drop-shadow: 1px 1px 10px 5px rgba(0, 0, 0, .05),
+		-1px -1px 10px rgba(0, 0, 0, .05);
+	--top-shadow: 0px -7px 10px 7px rgba(0, 0, 0, .05);
+	--bottom-shadow: 0px 7px 10px 7px rgba(0, 0, 0, .05);
+}
+
+body.darkmode {
+	--background-color: #000;
+	--font-color: #fff;
+	--drop-shadow: 0px 0px 15px rgba(255, 255, 255, .3),
+		-0px -0px 15px rgba(255, 255, 255, .3);
+	--bottom-shadow: 0px 7px 10px 7px rgba(255, 255, 255, .2);
+	--top-shadow: 0px -7px 10px 7px rgba(255, 255, 255, .2);
+}
+
+.drop-shadow {
+	box-shadow: var(--drop-shadow)
+}
+
+.top-shadow {
+	box-shadow: var(--top-shadow)
+}
+
+.bottom-shadow {
+	box-shadow: var(--bottom-shadow)
+}
+
+.dark-mode i {
+	color: var(--font-color)
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	height: 0px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+small,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+li,
+a,
+.logo {
+	color: var(--font-color)
+}
+
+img {
+	width: 100%;
+}
+
+body {
+	background: var(--background-color)
+}
+
+.btn-hover:hover {
+	transform: scale(1.1)
+}
+
+.theme-box {
+	position: absolute;
+	top: 25%;
+	position: fixed;
+	right: -18%;
+}
+
+.theme-box.active {
+	right: 0;
+
+}
+
+@media (max-width: 350px) {
+	.theme-box {
+		right: -47%;
+	}
+}
+
+/* GLOBAL CLASSES */
+.px-10percent {
+	padding: 0 5%
+}
+
+.fit-content {
+	width: fit-content;
+}
+
+.bg {
+	background: var(--background-color)
+}
+
+.text-bg {
+	color: var(--background-color)
+}
+
+.bg-theme {
+	background: var(--theme-color);
+}
+
+.bg-theme-light {
+	background: var(--theme-color)
+}
+
+.text-theme {
+	color: var(--theme-color);
+}
+
+.justify-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.justify-y-center {
+	display: flex;
+	justify-content: center;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.-z-1 {
+	z-index: -1;
+}
+
+.rectangle-clip {
+	clip-path: polygon(3% 0%, 100% 0%, 97% 100%, 0% 100%);
+}
+
+.newsletter button {
+	clip-path: polygon(12% 0%, 100% 0%, 88% 100%, 0% 100%);
+}
+
+.sign-up-btn {
+	clip-path: polygon(12% 0%, 100% 0%, 88% 100%, 0% 100%);
+}
+
+.btn-clip {
+	clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+}
+
+.h-100vh {
+	height: 100vh;
+}
+
+.bg-light-dark {
+	background: rgba(255, 255, 255, .4)
+}
+
+.h-200 {
+	height: 200px;
+}
+
+.opacity {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.dark-bg {
+	z-index: 5;
+	background: rgba(163, 163, 163, .2)
+}
+
+/* GLOBAL CLASSES */
+.theme-red {
+	background: #FF0C0C;
+}
+
+.theme-green {
+	background: #00FF09;
+}
+
+.theme-blue {
+	background: #0C3CFF;
+}
+
+.theme-amber {
+	background: #FF9500;
+}
+
+/* NAVBAR */
+.navbar {
+	z-index: 100;
+}
+
+.navbar.active {
+	position: absolute;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.logo {
+	font-family: "Raleway";
+	font-weight: 700;
+}
+
+.topbar span {
+	clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+}
+
+.nav-btn .line-1 {
+	width: 100%;
+	height: 2px;
+	background: var(--theme-color);
+	transition: .4s ease-in-out;
+	border-radius: 3px;
+}
+
+.nav-btn.active {
+	background: rgba(116, 118, 147, .05);
+	border-radius: 50%;
+}
+
+.nav-btn.active .line-1 {
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(-45deg);
+	/* background: var(--font-color); */
+}
+
+.nav-btn .line-2 {
+	width: 80%;
+	height: 2px;
+	background: var(--theme-color);
+	margin: 5px 0;
+	margin-left: auto;
+	border-radius: 3px;
+	transition: .4s ease-in-out;
+}
+
+.nav-btn.active .line-2 {
+	opacity: 0;
+	pointer-events: none;
+	/* background: var(--font-color); */
+	transition: .4s ease-in-out;
+}
+
+.nav-btn .line-3 {
+	width: 60%;
+	height: 2px;
+	margin-left: auto;
+	transition: .4s ease-in-out;
+	border-radius: 3px;
+	background: var(--theme-color);
+}
+
+.nav-btn.active .line-3 {
+	position: absolute;
+	width: 80%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	/* background: var(--font-color); */
+}
+
+.nav-items {
+	position: absolute;
+	right: -50%;
+	overflow: hidden;
+	z-index: 10;
+	transition: .4s ease-in-out;
+}
+
+.nav-items.active {
+	right: 0;
+	/* top: 0; */
+}
+
+.nav-items li a {
+	font-family: "Raleway";
+	/* font-weight: 500; */
+	transition: .4s;
+}
+
+.nav-items li:hover a {
+	letter-spacing: 1px;
+}
+
+
+/* NAVBAR */
+
+
+
+/* HOMEPAGE */
+.home {
+	background: url(../assets/bg/1.jpg) center;
+	background-size: cover
+}
+
+/* HOMEPAGE */
+
+/* TRENDING GAMES*/
+.slider {
+	overflow-x: scroll;
+}
+
+.card {
+	flex: 0 0 24.5%;
+}
+
+@media (max-width: 500px) {
+	.card {
+		flex: 0 0 48%;
+	}
+
+}
+
+.card-caption {
+	height: 0;
+	transition: all .4s ease-in-out;
+	bottom: -100%;
+
+}
+
+.card-caption i {
+	color: var(--theme-color)
+}
+
+.card-caption h5,
+.card-caption small {
+	color: #000 !important;
+}
+
+.card:hover .card-caption {
+	bottom: 0%;
+	height: auto;
+}
+
+/* GAMES  */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr)
+}
+
+.categories {
+	transition: .4s;
+}
+
+.filter-btns .active {
+	background: var(--theme-color);
+	/* color: #fff !important; */
+}
+
+.card.hide {
+	display: none;
+}
+
+.card.show {
+	animation: anim .4s linear 1;
+}
+
+@keyframes anim {
+	0% {
+		transform: scale(.5)
+	}
+
+	100% {
+		transform: scale(1)
+	}
+}
+
+@media (max-width: 500px) {
+	.grid {
+		grid-template-columns: repeat(2, 1fr)
+	}
+
+}
+
+/* GAMES */
+
+/* CONTACT */
+input,
+textarea {
+	width: 100% !important;
+}
+
+form button:hover {
+	background: var(--background-color);
+	color: var(--font-color)
+}
+
+.field .error {
+	display: none
+}
+
+.invalid .error {
+	display: flex
+}
+
+#password:valid~.show-hide-pass,
+#password:focus~.show-hide-pass {
+	display: block
+}
+
+/* NAVBAR */
+.notification-box {
+	position: absolute;
+	position: fixed;
+
+}
+
+.notification {
+	right: 100%;
+}
