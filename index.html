@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- TAILWIND CSS CDN-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- UNICONS CDN -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <title>Portfolio</title>
+  <!--EMAILJS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("xqbRRIzmUj6yb7RiF");
+    })();
+  </script>
+</head>
+
+<body class="relative">
+  <!-- NAVBAR -->
+  <nav class="navbar fixed px-10p flex items-center md:py-3 py-2 justify-between w-full duration-500 ease-in-out z-30 shadow shadow-md bg top-0">
+    <div class="nav-btn z-20 relative md:hidden lg:hidden vissible w-7 h-7 justify-center">
+      <span class="line-1"></span>
+      <span class="line-2"></span>
+      <span class="line-3"></span>
+    </div>
+    <div class="bg sidebar duration-500 ease-in-out items-center">
+      <ul class="md:flex gap-5">
+        <li class="md:pb-0 lg:pb-0 pb-1"><a href="#home" class="capitalize md:py-3 py-1 active tracking-wide duration-400 my-2 ease-in-out text-md hover:font- p-1">home</a></li>
+        <li class="md:pb-0 lg:pb-0 pb-1"><a href="#about" class="capitalize md:py-3 py-1 tracking-wide duration-400 my-2 ease-in-out text-md hover:font- p-1">about</a></li>
+        <li class="md:pb-0 lg:pb-0 pb-1"><a href="#resume" class="capitalize md:py-3 py-1 tracking-wide duration-400 my-2 ease-in-out text-md hover:font- p-1">resume</a></li>
+        <li class="md:pb-0 lg:pb-0 pb-1"><a href="#works" class="capitalize md:py-3 py-1 tracking-wide duration-400 my-2 ease-in-out text-md hover:font- p-1">works</a></li>
+        <li class="md:pb-0 lg:pb-0 pb-1"><a href="#contact" class="capitalize md:py-3 py-1 tracking-wide duration-400 my-2 ease-in-out text-md hover:font- p-1">contact</a></li>
+      </ul>
+    </div>
+    <div class="">
+      <i class="uil uil-sun text-xl cursor-pointer theme-btn"></i>
+    </div>
+  </nav>
+  <!-- HOMEPAGE -->
+  <section id="home" class="w-full px-10p">
+    <div class="flex justify-center home">
+      <div class="p-3">
+        <span class="uppercase font-">
+          hi there !
+        </span>
+        <h1 class="lower raleway font-semibold text-3xl">
+          i'm a <span class="text-theme">front-end web<br>developer.</span>
+        </h1>
+        <small class="capitalize text-sm">
+          fond of creating web application designs and bring <br>them to life with code and develope mobile designs.
+        </small><br>
+        <button onclick="location.href='https://drive.google.com/u/1/uc?id=1NwSCG-12q34-05AwHO1QIqY7KWod9COq&export=download'" class="mt-2 btn-clip rounded-sm text-md capitalize pl-3 pr-1 relative tracking-wide py-1 flex items-center duration-400 ease-in-out resume-btn bg- font-semibold">
+          resume
+          <i class="uil uil-angle-right text-xl text-theme"></i>
+          <span class="absolute bg-theme btn-bg"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- ABOUT -->
+  <section id="about" class="px-10p h-full py-5 relative">
+    <h1 class="heading text-4xl tracking-wider absolute top-0 left-1/2 -translate-x-1/2">
+      about
+    </h1>
+    <h1 class="text-center capitalize text-2xl text-theme font-semibold">
+      about
+    </h1>
+    
+    <div class="box flex justify-center">
+      <div class="md:w-4/5 ">
+        <h1 class="text-lg">
+          hello,i'am <span class="text-theme capitalize font-semibold">mohammad emam -</span>
+        </h1>
+        <span class="font-semibold py-3">
+          web designer/developer.
+        </span><br>
+        <h6>
+          I am a front-end web designer and developer.
+          I am providing user-friendly and completely responsive websites to my clients.
+          I can take care of almost everything you require.
+          So, if you need a responsive and user friendly website, contact me.
+        </h6>
+      </div>
+    </div>
+    <span class="absolute bottom-5 right-5p ">
+      <small class="font- raleway flex gap-2 items-center text-center tracking-wide">
+        <span class="w-10 h-1 bg-theme rounded-md"></span>
+        <span>Agrabad,Chittagong<br>
+          <span class="font-semibold uppercase tracking-wider">bangladesh</span></span>
+        <span class="w-10 h-1 bg-theme rounded-md"></span>
+      </small>
+    </span>
+  </section>
+  <!-- RESUME -->
+  <section id="resume" class="px-10p mt-5 py-5 w-full relative">
+    <h1 class="heading text-3xl tracking-wider absolute top-0 left-1/2 -translate-x-1/2">
+      resume
+    </h1>
+    <h1 class="text-center capitalize text-2xl text-theme font-semibold">
+      resume
+    </h1>
+    <div class="grid mt-8 md:grid-cols-3 lg:grid-cols-3 gap-3 grid-cols-auto">
+      <div class="w-3/3">
+        <h1 class="raleway text-theme pl-1 font-semibold capitalize">
+          languages
+        </h1>
+        <ul class="flex flex-column pt-2 pb-4 gap-2">
+          <li class="flex items-center">
+            <div class="rounded-sm w-1/5 overflow-hidden flex justify-center">
+              <i class="uil uil-html5-alt border-2 w-8 h-8 overflow-hidden text-xl flex justify-center"></i>
+            </div>
+            <span class="w-2/5 capitalize flex items-center gap-2">
+              html5
+            </span>
+            <span class="relative border bar h-1 w-3/5 bg-white rounded- overflow-hidden">
+              <span class="absolute top-0 left-0 w-4/5 h-1 progress bg-theme">
+              </span>
+            </span>
+          </li>
+          <li class="flex items-center">
+            <div class="rounded-sm w-1/5 overflow-hidden flex justify-center">
+              <i class="uil uil-css3-simple border-2 w-8 h-8 overflow-hidden text-xl flex justify-center"></i>
+            </div>
+            <span class="w-2/5 capitalize flex items-center gap-2">
+              css3
+            </span>
+            <span class="relative border bar h-1 w-3/5 bg-white rounded- overflow-hidden">
+              <span class="absolute top-0 left-0 w-4/5 h-1 progress bg-theme">
+              </span>
+            </span>
+          </li>
+          <li class="flex items-center">
+            <div class="rounded-sm w-1/5 overflow-hidden flex justify-center">
+              <i class="uil uil-java-script border-2 w-8 h-8 overflow-hidden text-2xl flex justify-center"></i>
+            </div>
+            <span class="w-2/5 capitalize flex items-center gap-2">
+              javascript
+            </span>
+            <span class="relative border bar h-1 w-3/5 bg-white rounded- overflow-hidden">
+              <span class="absolute top-0 left-0 w-2/4 h-1 progress bg-theme">
+              </span>
+            </span>
+          </li>
+          <li class="flex items-center">
+            <div class="rounded-sm w-1/5 overflow-hidden flex justify-center">
+              <span class="w-8 h-8 rounded-sm border-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS Logo.svg">
+              </span>
+            </div>
+            <span class="w-2/5 capitalize flex items-center gap-2">
+              tailwind
+            </span>
+            <span class="relative border bar h-1 w-3/5 bg-white rounded- overflow-hidden">
+              <span class="absolute top-0 left-0 w-4/5 h-1 progress bg-theme">
+              </span>
+            </span>
+          </li>
+
+
+
+          <li class="flex items-center">
+            <div class="rounded-sm w-1/5 overflow-hidden flex justify-center">
+              <svg class="" xmlns="http://www.w3.org/2000/svg" width="" height="" fill="currentColor" class="bi bi-bootstrap" viewBox="0 0 16 16">
+                <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z" />
+                <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z" />
+              </svg>
+            </div>
+            <span class="w-2/5 capitalize flex items-center gap-2">
+              bootstrap
+            </span>
+            <span class="relative border bar h-1 w-3/5 bg-white rounded- overflow-hidden">
+              <span class="absolute top-0 left-0 w-2/4 h-1 progress bg-theme">
+              </span>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="w-3/3">
+        <h1 class="raleway text-theme pl-2 font-semibold capitalize">
+          experience
+        </h1>
+        <ul class="flex flex-column pt-2 pb-4 gap-2">
+          <li class="flex items-center">
+            <div class="rounded-sm w-1/5 overflow-hidden flex justify-center">
+              <img class="bg-green-500 p-1 w-10 h-10 rounded-3xl" src="assets/svg/fiverr.svg">
+            </div>
+            <h6 class="capitalize">
+              fiverr.com<br>
+              <small>
+                2021-2023
+              </small>
+            </h6>
+
+          </li>
+          <li class="flex items-center">
+            <div class="rounded-sm w-1/5 overflow-hidden flex justify-center">
+              <img class="bg-white p-1 w-10 h-10 rounded-3xl" src="assets/svg/upwork.svg">
+            </div>
+            <h6 class="capitalize">
+              upwork.com<br>
+              <small>
+                2021-2023
+              </small>
+            </h6>
+
+          </li>
+          <li class="flex items-center">
+            <div class="rounded-sm w-1/5 overflow-hidden flex justify-center">
+              <img class="bg-sky-300 p-1 w-10 h-10 rounded-3xl" src="assets/svg/freelancer.svg">
+            </div>
+            <h6 class="capitalize">
+              freelancer.com<br>
+              <small>
+                2021-2023
+              </small>
+            </h6>
+
+          </li>
+        </ul>
+        <h1 class="raleway text-theme pl- font-semibold capitalize">
+          personal skills
+        </h1>
+        <ul class="flex flex-column pt-2 gap-2">
+          <li class="flex items-center">
+            <h6 class="capitalize">
+              creative, team-work, organization.
+            </h6>
+          </li>
+        </ul>
+      </div>
+      <div class="w-3/3">
+        <h1 class="raleway text-theme pl- font-semibold capitalize">
+          what can i do ?
+        </h1>
+        <ul class="flex flex-column pt-2 pb-4 gap-2">
+          <li class="flex items-center">
+            <h6 class="capitalize">
+              portfolio, e-commerce, illustration, creative, photography website etc.
+            </h6>
+          </li>
+        </ul>
+        <h1 class="raleway text-theme pl- font-semibold capitalize">
+          hobbies & interests
+        </h1>
+        <ul class="flex flex-wrap hobbies pt-2 items-center gap-2">
+          <li class="flex capitalize flex-column items-center">
+            <span class="flex justify-center w-10 h-10 rounded-3xl border ">
+              <i class="uil uil-plane text-xl"></i>
+            </span>
+            traveling
+          </li>
+          <li class="flex capitalize flex-column items-center">
+            <span class="flex justify-center w-10 h-10 rounded-3xl border">
+              <i class="uil uil-headphones text-xl "></i> </span>
+            music
+          </li>
+          <li class="flex capitalize flex-column items-center">
+            <span class="flex justify-center w-10 h-10 rounded-3xl border">
+              <i class="uil uil-camera text-xl"></i> </span>
+            photography
+          </li>
+          <li class="flex capitalize flex-column items-center">
+            <span class="flex justify-center w-10 h-10 rounded-3xl border">
+              <i class="uil uil-book text-xl"></i> </span>
+            reading
+          </li>
+          <li class="flex capitalize flex-column items-center">
+            <span class="flex justify-center w-10 h-10 rounded-3xl border">
+              <i class="uil uil-desktop text-xl"></i> </span>
+            movies
+          </li>
+          <li class="flex capitalize flex-column items-center">
+            <span class="flex justify-center w-10 h-10 rounded-3xl border">
+              <i class="uil uil-arrow text-xl"></i> </span>
+            coding
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- WORKS -->
+  <section id="works" class="works px-10p relative py-5 mt-5">
+    <h1 class="heading text-3xl tracking-wider absolute top-0 left-1/2 -translate-x-1/2">
+      works
+    </h1>
+    <h1 class="text-center capitalize text-2xl text-theme font-semibold">
+      works
+    </h1>
+    <div class="text-center categories my-6 flex flex-wrap items-center justify-center mx-auto">
+      <span data-category="all" class="px-4 py-1 text-center capitalize rounded-sm bg items active">
+        all
+      </span>
+      <span data-category="portfolio" class="px-4 py-1 text-center capitalize rounded-sm bg items">
+        portfolio
+      </span>
+      <span data-category="e-com" class="px-4 py-1 text-center capitalize rounded-sm bg items">
+        e-commerce
+      </span>
+      <span data-category="resume" class="px-4 py-1 text-center capitalize rounded-sm bg items">
+        resume
+      </span>
+      <span data-category="others" class="px-4 py-1 text-center capitalize rounded-sm bg items">
+        others
+      </span>
+    </div>
+    <div class="grid py-5 sm:grid-cols-2 grid-cols-1 md:grid-cols-4 lg:grid-cols-4 md:gap-3 gap-5">
+      <figure data-item="portfolio" class="relative h-300 card w-2/2 overflow-">
+        <div class="overflow-hidden h-100p w-100p absolute top-0 left-0">
+          <img src="assets/work/portfolio2.png" class="bg-cover duration-400">
+        </div>
+        <figcaption class="p-2 absolute bg-theme top-0 left-0 w-100p h-100p flex flex-column justify-center">
+          <h1 class="capitalize font-semibold text-bg title text-xl ">
+            portfolio
+          </h1>
+          <a href="https://iamnothing.github.io/mdemam/" class="w-fc flex gap-2 text-underline items-center text-sm text-bg">
+                Visit site
+                <i class="uil uil-share text-md text-bg"></i>
+              </a>
+        </figcaption>
+      </figure>
+      <figure data-item="e-com" class="relative h-300 card w-2/2 overflow-">
+        <div class="overflow-hidden h-100p w-100p absolute top-0 left-0">
+          <img src="assets/work/e-com2.png" class="bg-cover duration-400">
+        </div>
+        <figcaption class="p-2 absolute bg-theme top-0 left-0 w-100p h-100p flex flex-column justify-center">
+          <h1 class="font-semibold text-bg title text-xl">
+            Gameshop
+          </h1>
+          <h1 class="capitalize font-semibold text-bg title">
+            e-commerce
+          </h1>
+          <a href="https://iamnothing.github.io/gameshop/" class="w-fc flex gap-2 text-underline items-center text-sm text-bg">
+                Visit site
+                <i class="uil uil-share text-md text-bg"></i>
+              </a>
+        </figcaption>
+      </figure>
+      <figure data-item="portfolio" class="relative h-300 card w-2/2 overflow-">
+        <div class="overflow-hidden h-100p w-100p absolute top-0 left-0">
+          <img src="assets/work/portfolio1.png" class="bg-cover duration-400">
+        </div>
+        <figcaption class="p-2 absolute bg-theme top-0 left-0 w-100p h-100p flex flex-column justify-center">
+          <h1 class="capitalize font-semibold text-bg title text-xl ">
+            portfolio
+          </h1>
+          <a href="https://iamnothing.github.io/portfolio/" class="w-fc flex gap-2 text-underline items-center text-sm text-bg">
+                Visit site
+                <i class="uil uil-share text-md text-bg"></i>
+              </a>
+        </figcaption>
+      </figure>
+      <figure data-item="resume" class="relative h-300 card w-2/2 overflow-">
+        <div class="overflow-hidden h-100p w-100p absolute top-0 left-0">
+          <img src="assets/work/cv.png" class="bg-cover duration-400">
+        </div>
+        <figcaption class="p-2 absolute bg-theme top-0 left-0 w-100p h-100p flex flex-column justify-center">
+          <h1 class="capitalize font-semibold text-bg title text-xl ">
+            resume
+          </h1>
+          <a href="https://iamnothing.github.io/cv/" class="w-fc flex gap-2 text-underline items-center text-sm text-bg">
+                Visit site
+                <i class="uil uil-share text-md text-bg"></i>
+              </a>
+        </figcaption>
+      </figure>
+      <figure data-item="e-com" class="relative h-300 card w-2/2 overflow-">
+        <div class="overflow-hidden h-100p w-100p absolute top-0 left-0">
+          <img src="assets/work/e-com1.png" class="bg-cover duration-400">
+        </div>
+        <figcaption class="p-2 absolute bg-theme top-0 left-0 w-100p h-100p flex flex-column justify-center">
+          <h1 class="font-semibold text-bg title text-xl ">
+            Gamersland
+          </h1>
+          <h1 class="capitalize font-semibold text-bg title">
+            e-commerce
+          </h1>
+          <a href="https://iamnothing.github.io/gamersland/" class="w-fc flex gap-2 text-underline items-center text-sm text-bg">
+                Visit site
+                <i class="uil uil-share text-md text-bg"></i>
+              </a>
+        </figcaption>
+      </figure>
+      <figure data-item="others" class="relative h-300 card w-2/2 overflow-">
+        <div class="overflow-hidden h-100p w-100p absolute top-0 left-0">
+          <img src="assets/work/others1.png" class="bg-cover duration-400">
+        </div>
+        <figcaption class="p-2 absolute bg-theme top-0 left-0 w-100p h-100p flex flex-column justify-center">
+          <h1 class="capitalize font-semibold text-bg title text-xl ">
+            others
+          </h1>
+          <a href="#" class="w-fc flex gap-2 text-underline items-center text-sm text-bg">
+                Visit site
+                <i class="uil uil-share text-md text-bg"></i>
+              </a>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+  <!-- CONTACT -->
+  <section id="contact" class="contact px-10p py-5 relative">
+    <h1 class="heading text-3xl tracking-wider absolute top-0 left-1/2 -translate-x-1/2">
+      contact
+    </h1>
+    <h1 class="text-center capitalize text-2xl text-theme font-semibold">
+      contact
+    </h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 py-5">
+      <div class="flex w-100p justify-center p-5">
+        <div>
+          <h1 class="text-2xl raleway text-wider capitalize font-semibold">
+            let's talk
+          </h1>
+          <small class="capitalize ">
+            ask me anything or just say hi
+          </small>
+          <div class="mt-4">
+            <div class="flex items-center gap-3">
+              <i class="uil uil-envelope text-3xl text-theme"></i>
+              <span>
+                <h1 class="capitalize font-semibold">
+                  email
+                </h1>
+                <a href="mailto:iamnothing@gmail.com" >
+                  iamnothing@gmail.com
+                </a>
+              </span>
+            </div>
+            <div class="flex my-1 items-center gap-3">
+              <i class="uil uil-phone text-3xl text-theme"></i>
+              <span>
+                <h1 class="capitalize font-semibold">
+                  phone
+                </h1>
+                <a href="tel:+8801974885463">
+                  +8801974885463
+                </a>
+              </span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="uil uil-location-point text-3xl text-theme"></i>
+              <span>
+                <h1 class="capitalize font-semibold">
+                  address
+                </h1>
+                <span>
+                  chittagong,Bangladesh
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex w-100p justify-center">
+        <form>
+          <div class="name-field field">
+            <div class="relative h-10 rounded-sm flex items-center border-b input-area">
+              <i class="uil uil-user pl-2 text-theme"></i>
+              <input type="text" required="required" class="w-100p z-10 p-2 border-none outline-none bg-transparent text-white">
+              <span class="duration-500 placeholder bg px-2 ease-in-out capitalize left-6 py-0">
+                name
+              </span>
+            </div>
+            <small class="error py-1">
+              <i class="uil uil-times-circle text-red-400"></i>
+              <span class="name-error text-red-400">
+              </span>
+            </small>
+          </div>
+          <div class="email-field field my-2">
+            <div class="relative h-10 rounded-sm flex items-center border-b input-area">
+              <i class="uil uil-at pl-2 text-theme"></i>
+              <input type="text" required class="w-100p z-10 p-2 lowercase border-none outline-none bg-transparent text-white">
+              <span class="duration-500 placeholder bg px-2 ease-in-out capitalize left-6 py-0">
+                email
+              </span>
+            </div>
+            <small class="error py-1">
+              <i class="uil uil-times-circle text-red-400"></i>
+              <span class="email-error text-red-400">
+              </span>
+            </small>
+          </div>
+          <div class="msg-field field">
+            <div class="relative h-10 rounded-sm flex items-center border-b input-area">
+              <i class="uil uil-envelope pl-2 text-theme"></i>
+              <input type="text" required class="w-100p p-2 border-none outline-none bg-transparent text-white">
+              <span class="duration-500 placeholder bg px-2 ease-in-out capitalize left-6 py-0">
+                message
+              </span>
+            </div>
+            <small class="error py-1">
+              <i class="uil uil-times-circle text-red-400"></i>
+              <span class="msg-error text-red-400">
+              </span>
+            </small>
+          </div>
+          <button type="submit" class=" relative overflow-hidden border-theme flex justify-center w-100p px-3 py-2 border-b rounded-sm">
+            <span class="text-theme">Send message</span>
+            <i class="uil uil-message pl-1 text-md text-theme"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="absolute msg-sent bg z-10 drop-shadow shadow-sm rounded-md">
+      <div class="flex py-3 px-7 flex-column relative justify-center">
+        <i class="uil uil-times close-icon absolute top-2 right-3 cursor-pointer text-2xl text-white"></i>
+        <i class="uil uil-check-circle text-4xl text-green-700 mb-2"></i>
+        <h1 class="capitalize text-center text-lg font-semibold">
+          successfully!!<br>
+          send message.
+        </h1>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <section class="px-10p py-3 flex items-center justify-between">
+    <small class="capitalize">
+      <i class="uil uil-copyright"></i>
+      all rights reserved | mohammad emam.
+    </small>
+    <span>
+      <span>
+        <a class="text-xl" href="https://www.facebook.com/1.am.n0thing/">
+          <i class="uil cursor-pointer hover:text-gray-500 uil-facebook-f"></i>
+        </a>
+        <a class="text-xl" href="https://www.instagram.com/1.am.n0thing/">
+          <i class="uil cursor-pointer mx-1 uil-instagram"></i>
+        </a>
+        <a class="text-xl" href="https://www.github.com/iamnothing/">
+          <i class="uil cursor-pointer uil-github"></i>
+        </a>
+      </span>
+    </span>
+  </section>
+</body>
+<!-- JAVASCRIPT Link -->
+<script src="js/script.js"></script>
+
+</html>
